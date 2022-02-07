@@ -13,6 +13,7 @@ sampleDict = {
    }
 }
 
+sampleDict["class"]["student"]["name"]
 
 
 

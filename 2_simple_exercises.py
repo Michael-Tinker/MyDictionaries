@@ -1,6 +1,9 @@
 # 1) print out the value for the key 'history' using the dictionary below
 
 
+from random import sample
+
+
 sampleDict = { 
    "class":{ 
       "student":{ 
@@ -13,8 +16,7 @@ sampleDict = {
    }
 }
 
-sampleDict["class"]["student"]["name"]
-
+print(sampleDict["class"]["student"]["marks"]["history"])
 
 
 # 2) Add 2 inches to the son's height.
@@ -22,7 +24,8 @@ sampleDict["class"]["student"]["name"]
 dict={"son's name": "Lucas", "son's eyes": "green", "son's height": 32, "son's weight": 25}
 
 
-
+height = int(dict["son's height"]) + 2
+dict["son's height"] = height
 
 
 # 3) Given a Python dictionary, Change Brad’s salary to 8500
@@ -33,7 +36,8 @@ sampleDict = {
      'emp3': {'name': 'Brad', 'salary': 6500}
 }
 
-
+sampleDict["emp3"]["salary"] = 8500
+print(sampleDict)
 
 
 
@@ -44,3 +48,6 @@ sampleDict = {
 dict={"name": "Plato", "country": "Ancient Greece", "born": -427, "teacher": "Socrates", "student": "Aristotle"}
 
 
+print(dict)
+dict["work"] = ["Apology", "Phaedo", "Republic", "Symposium"]
+print(dict)
